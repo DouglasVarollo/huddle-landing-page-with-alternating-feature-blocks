@@ -1,0 +1,441 @@
+@import "_variables.css";
+@import "_reset.css";
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	background-color: var(--pink);
+	border: 1px solid var(--pink);
+	box-shadow: 0 2px 10px rgba(255, 82, 191, 0.3);
+}
+
+header {
+  background: var(--very-pale-cyan) url(../images/bg-hero-desktop.svg) no-repeat
+    center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.navigation img {
+  width: 200px;
+}
+
+.navigation button {
+	width: 200px;
+	height: 48px;
+	color: var(--very-dark-cyan);
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0 2px 10px hsla(208, 11%, 55%, 0.2);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 60px 0;
+}
+
+.hero--content {
+  flex: 1;
+  max-width: 510px;
+  margin-right: 60px;
+}
+
+.hero--content h1 {
+  margin-bottom: 28px;
+  font-size: 40px;
+}
+
+.hero--content p {
+	margin-bottom: 30px;
+  line-height: 28px;
+  color: var(--very-dark-cyan);
+}
+
+.hero--content button {
+	width: 280px;
+	height: 56px;
+}
+
+.hero--image {
+  flex: 2;
+  max-width: 695px;
+}
+
+.hero--image img {
+  width: 100%;
+}
+
+.features {
+	padding: 160px 24px 344px 24px;
+}
+
+.feature {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 440px;
+	padding: 0 30px 0 120px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px hsla(208, 11%, 55%, 0.1);
+}
+
+.feature + .feature {
+	margin-top: 40px;
+}
+
+.feature:nth-child(2) .feature--content {
+	order: 2;
+	margin: 0 0 0 40px;
+}
+
+.feature--content {
+	flex: 1;
+	max-width: 635px;
+	margin-right: 40px;
+}
+
+.feature--content h3 {
+	margin-bottom: 12px;
+	font-size: 28px;
+}
+
+.feature--content p {
+	line-height: 28px;
+	color: var(--grayish-blue);
+}
+
+.feature--image {
+	flex: 2;
+	max-width: 417px;
+}
+
+.feature--image img {
+	width: 100%;
+}
+
+footer {
+	position: relative;
+	padding: 190px 40px 60px 40px;
+	color: #fff;
+	background-color: var(--very-dark-cyan)
+}
+
+.community {
+	position: absolute;
+	top: -183px;
+	right: 0;
+	left: 0;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px 0 50px 0;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px hsla(208, 11%, 55%, 0.1);
+	text-align: center;
+}
+
+.community h2 {
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+.community button {
+	max-width: 400px;
+	width: 100%;
+	height: 80px;
+	border-radius: 40px;
+	font-size: 20px;
+}
+
+.wrapper--content {
+	display: flex;
+}
+
+.logo--footer {
+	margin-bottom: 40px;
+}
+
+.logo--footer img {
+	width: 240px;
+}
+
+.contacts {
+	max-width: 360px;
+}
+
+.contacts, .links {
+	margin-right: 120px;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+}
+
+.contact + .contact  {
+	margin-top: 20px;
+}
+
+.contact:nth-child(1) img {
+	align-self: flex-start;
+	margin-top: 6px;
+}
+
+.contact img {
+	margin-right: 20px;
+}
+
+.links ul li + li {
+	margin-top: 13px;
+}
+
+.social-links {
+	display: flex;
+}
+
+.social-links a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+
+.social-links a + a {
+	margin-left: 10px;
+}
+
+.copyright {
+	font-size: 16px;
+	text-align: right;
+}
+
+@media screen and (max-width: 1280px) {
+	.hero--image {
+		max-width: 50%;
+	}
+
+	.contacts, .links {
+		margin-right: 80px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		background-size: cover;
+	}
+
+	.hero {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero--content {
+		margin: 0 0 40px 0;
+	}
+
+	.hero--image {
+		max-width: 75%;
+	}
+
+	.feature {
+		padding: 0 15px 0 60px;
+	}
+
+	.feature--content {
+		max-width: 50%;
+	}
+
+	.feature--content h3 {
+		font-size: 20px;
+	}
+
+	.feature--content p {
+		font-size: 14px;
+	}
+
+	.feature--image {
+		max-width: 40%;
+	}
+
+	footer {
+		padding: 130px 40px 60px 40px;
+	}
+
+	.community {
+		right: 14px;
+		left: 14px;
+	}
+
+	.contacts, .links {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+
+	.navigation {
+		padding: 24px 16px;
+	}
+
+	.navigation img {
+		width: 175px;
+	}
+
+	.hero--content h1 {
+		font-size: 30px;
+	}
+
+	.feature {
+		flex-direction: column;
+		height: auto;
+		padding: 40px 30px;
+		text-align: center;
+	}
+
+	.feature--content, .feature--image {
+		max-width: 75%;
+		margin: 0;
+	}
+
+	.feature--content {
+		order: 2;
+	}
+
+	.feature--image {
+		margin: 0 0 40px 0;
+	}
+
+	footer {
+		font-size: 16px;
+	}
+
+	.wrapper--content {
+		flex-direction: column;
+	}
+
+	.contacts, .links {
+		margin-right: 0;
+	}
+
+	.contacts {
+		max-width: 100%;
+		margin: 0 0 40px 0;
+	}
+
+	.links {
+		margin-bottom: 10px;
+	}
+
+	.links + .links  {
+		margin-bottom: 40px;
+	}
+
+	.social-links {
+		align-self: center;
+		margin-bottom: 20px;
+	}
+
+	.copyright {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.button {
+		font-size: 10px;
+	}
+
+	header {
+		background: var(--very-pale-cyan) url(../images/bg-hero-desktop.svg) no-repeat center/cover;
+	}
+
+	.navigation img {
+		width: 105px;
+	}
+
+	.navigation button {
+		max-width: 96px;
+		width: 100%;
+		height: 25px;
+	}
+	
+	.hero--content, .hero--image {
+		max-width: 90%;
+	}
+
+	.hero--content h1 {
+		font-size: 24px;
+	}
+
+	.hero--content p {
+		font-size: 16px;
+	}
+
+	.hero--content button {
+		max-width: 240px;
+		width: 100%;
+		height: 40px;
+		font-size: 12px;
+	}
+
+	.features {
+		padding: 60px 20px 232px 20px;
+	}
+
+	.feature--content, .feature--image {
+		max-width: 100%;
+	}
+
+	.feature:nth-child(2) .feature--content {
+		margin: 0;
+	}
+
+	footer {
+		padding: 130px 14px 40px 14px;
+	}
+
+	.community {
+		top: -110px;
+		padding: 40px 0;
+	}
+
+	.community h2 {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+
+	.community button {
+		max-width: 200px;
+		height: 40px;
+		font-size: 10px;
+	}
+
+	.logo--footer img {
+		width: 170px;
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
+}
